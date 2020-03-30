@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="manifest" href="manifest.json">
+    <script>
+        if('serviceWorker' in navigator) {
+            window.addEventListener('load', function(){
+                navigator.serviceWorker.register('sw.js').then(function(register){
+
+                    Notification.requestPermission(function(result){
+                        if(result === 'granted') {
+                            navigator.serviceWorker.ready.then(function(register){
+                                register.showNotification('Notification is okey!');
+                            });
+                        }
+                    });
+
+                    console.log('Worker - ok!', register);
+                }, function(error){
+                    console.log('Worker - error!', register)
+                });
+            });
+        }
+
+        window.addEventListener('appinstalled', (event) => {
+            console.log('React chat has been installed!');
+        });
+
+        window.addEventListener('beforeinstallprompt', (event) => {
+            console.log('React chat is not installed yet!');
+        });
+    </script>
+    <title>React Homework 2</title>
+<link href="main.css" rel="stylesheet"></head>
+<body>
+
+    <div id="root"></div>
+
+<script type="text/javascript" src="bundle.js"></script></body>
+</html>

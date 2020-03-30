@@ -1,0 +1,18 @@
+.message {
+
+    background-color: aquamarine;
+    margin: 5px;
+    padding: 10px 15px;
+    border-radius: 15px;
+}
+
+.message-owner {
+    align-self: flex-end;
+}
+.message-bot {
+    align-self: flex-start;
+}
+.message-sender {
+    font-size: 0.8em;
+    color: grey;
+}

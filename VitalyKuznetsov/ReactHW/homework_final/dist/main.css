@@ -1,0 +1,16 @@
+.header{display:flex;justify-content:center;background-color:lightgray;width:100%}.link{text-decoration:none;color:white}
+
+#simple{border:2.5px solid grey;margin:0;padding:0;height:65vh}.button-delete{margin-right:5%;margin-left:-10%;color:red}
+
+.messanger{height:100%;width:50%;margin:auto;display:flex;align-items:center;justify-content:center;flex-direction:column}.wrapper{display:flex;justify-content:center;width:100%}#simple{width:50%;border:2.5px solid grey;height:65vh}.chat-wrapper{display:flex;justify-content:center;flex-wrap:wrap;align-items:center;width:90%}
+
+.message-list{display:flex;flex-direction:column;background-color:lightblue;height:60vh;width:calc(100%-40px);padding:20px;overflow-y:scroll;border:1px solid grey;width:90%}
+
+.message{background-color:aquamarine;margin:5px;padding:10px 15px;border-radius:15px}.message-owner{align-self:flex-end}.message-bot{align-self:flex-start}.message-sender{font-size:0.8em;color:grey}
+
+.message-field{display:flex;justify-content:space-between;align-items:flex-end;width:100%;padding:30px 10px}
+
+.chat{font-size:30px}
+
+.profile{height:100%;width:50%;margin:auto;display:flex;align-items:center;justify-content:center;flex-direction:column}
+

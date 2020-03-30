@@ -1,0 +1,18 @@
+.profile__wrapper {
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    width: 100%;
+    padding: 50px;
+}
+.info__link--item {
+    display: block;
+    margin-top: 20px;
+}
+.profile__image {
+   
+}
+.profile__info {
+    margin: 0;
+    padding: 0;
+}

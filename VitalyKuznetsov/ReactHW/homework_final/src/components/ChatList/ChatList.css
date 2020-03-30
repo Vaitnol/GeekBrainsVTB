@@ -1,0 +1,11 @@
+#simple {
+    border: 2.5px solid grey;
+    margin: 0;
+    padding: 0;
+    height: 65vh;
+}
+.button-delete {
+    margin-right: 5%;
+    margin-left: -10%;
+    color: red;
+}
